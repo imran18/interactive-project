@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 9]><html class="ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gt IE 9)|(gt IEMobile 7)]><!-->
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<!--<![endif]-->
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="utf-8" />
+    
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Collections</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="cleartype" content="on">
+
+    <style>
+        @import url("http://collectionsearch.nma.gov.au/modules/system/system.base.css?ql3p5u");
+        @import url("http://collectionsearch.nma.gov.au/modules/system/system.messages.css?ql3p5u");
+        @import url("http://collectionsearch.nma.gov.au/modules/system/system.theme.css?ql3p5u");
+    </style>
+    <style>
+        @import url("http://collectionsearch.nma.gov.au/modules/comment/comment.css?ql3p5u");
+        @import url("http://collectionsearch.nma.gov.au/profiles/oxide/modules/contrib/date/date_api/date.css?ql3p5u");
+        @import url("http://collectionsearch.nma.gov.au/profiles/oxide/modules/contrib/date/date_popup/themes/datepicker.1.7.css?ql3p5u");
+        @import url("http://collectionsearch.nma.gov.au/modules/field/theme/field.css?ql3p5u");
+        @import url("sites/all/modules/contrib/menu_attach_block/menu_attach_block2c3d.css?ql3p5u");
+        @import url("http://collectionsearch.nma.gov.au/modules/node/node.css?ql3p5u");
+        @import url("http://collectionsearch.nma.gov.au/modules/search/search.css?ql3p5u");
+        @import url("http://collectionsearch.nma.gov.au/modules/user/user.css?ql3p5u");
+        @import url("http://collectionsearch.nma.gov.au/profiles/oxide/modules/contrib/views/css/views.css?ql3p5u");
+        @import url("sites/all/modules/contrib/ckeditor/css/ckeditor2c3d.css?ql3p5u");
+    </style>
+    <style>
+        @import url("sites/all/modules/contrib/apachesolr_autocomplete/apachesolr_autocomplete2c3d.css?ql3p5u");
+        @import url("sites/all/modules/contrib/apachesolr_autocomplete/jquery-autocomplete/jquery.autocomplete2c3d.css?ql3p5u");
+        @import url("http://collectionsearch.nma.gov.au/profiles/oxide/modules/contrib/ctools/css/ctools.css?ql3p5u");
+    </style>
+    <style>
+        @import url("sites/all/themes/cs/css/normalize2c3d.css?ql3p5u");
+        @import url("sites/all/themes/cs/css/scrollbar2c3d.css?ql3p5u");
+        @import url("sites/all/themes/cs/css/carousel2c3d.css?ql3p5u");
+        @import url("sites/all/themes/cs/css/tabs2c3d.css?ql3p5u");
+        @import url("sites/all/themes/cs/css/pages2c3d.css?ql3p5u");
+        @import url("sites/all/themes/cs/css/blocks2c3d.css?ql3p5u");
+        @import url("sites/all/themes/cs/css/navigation2c3d.css?ql3p5u");
+        @import url("sites/all/themes/cs/css/views-styles2c3d.css?ql3p5u");
+        @import url("sites/all/themes/cs/css/forms2c3d.css?ql3p5u");
+        @import url("sites/all/themes/cs/css/fields2c3d.css?ql3p5u");
+        @import url("sites/all/themes/cs/css/responsive2c3d.css?ql3p5u");
+        @import url("sites/all/themes/cs/css/wysiwyg-styles2c3d.css?ql3p5u");
+        @import url("sites/all/themes/cs/css/print2c3d.css?ql3p5u");
+    </style>
+    <style>
+        .spin-size{
+    width: 150px !important;
+    height: 150px !important;
+    position: absolute;
+    bottom: 35%;
+    left: 45%;
+}
+    </style>
+
+    <script src="https://use.typekit.net/eqg4sln.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+
+    <script src="sites/all/modules/contrib/jquery_update/replace/jquery/1.8/jquerya532.js?v=1.8.3"></script>
+    <script src="http://collectionsearch.nma.gov.au/misc/jquery-extend-3.4.0.js?v=1.8.3"></script>
+    <script src="http://collectionsearch.nma.gov.au/misc/jquery.once.js?v=1.2"></script>
+    <script src="http://collectionsearch.nma.gov.au/misc/drupal.js?ql3p5u"></script>
+    <script src="sites/all/modules/contrib/jquery_update/replace/ui/external/jquery.cookie1683.js?v=67fb34f6a866c40d0570"></script>
+    <script src="sites/all/modules/contrib/jquery_update/replace/misc/jquery.form97e5.js?v=2.69"></script>
+    <script src="http://collectionsearch.nma.gov.au/misc/ajax.js?v=7.69"></script>
+    <script src="sites/all/modules/contrib/jquery_update/js/jquery_update241d.js?v=0.0.1"></script>
+    <script src="http://collectionsearch.nma.gov.au/profiles/oxide/modules/contrib/spamspan/spamspan.js?ql3p5u"></script>
+    <script src="sites/all/modules/contrib/apachesolr_autocomplete/apachesolr_autocomplete2c3d.js?ql3p5u"></script>
+    <script src="sites/all/modules/contrib/apachesolr_autocomplete/jquery-autocomplete/jquery.autocomplete2c3d.js?ql3p5u"></script>
+    <script src="http://collectionsearch.nma.gov.au/misc/progress.js?v=7.69"></script>
+    <script src="sites/all/libraries/jquery.mousewheel/jquery.mousewheel2c3d.js?ql3p5u"></script>
+    <script src="sites/all/libraries/history.js/scripts/bundled/html4%2bhtml5/jquery.history2c3d.js?ql3p5u"></script>
+    <script src="sites/all/modules/custom/nma_cs/js/nma_cs_collections2c3d.js?ql3p5u"></script>
+    <script src="sites/all/modules/contrib/facetapi/facetapi2c3d.js?ql3p5u"></script>
+    <script src="sites/all/modules/custom/nma_solr/js/facet-filter2c3d.js?ql3p5u"></script>
+    <script src="sites/all/modules/google_analytics/googleanalytics2c3d.js?ql3p5u"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i["GoogleAnalyticsObject"] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
+        ga("create", "UA-18965158-20", {
+            "cookieDomain": "auto"
+        });
+        ga("send", "pageview");
+    </script>
+    <script src="sites/all/libraries/placeholder/jquery.placeholder2c3d.js?ql3p5u"></script>
+    <script src="sites/all/modules/contrib/placeholder/placeholder2c3d.js?ql3p5u"></script>
+    <script src="sites/all/libraries/jquery.lazyload/jquery.lazyload.min2c3d.js?ql3p5u"></script>
+    <script src="sites/all/themes/cs/js/script2c3d.js?ql3p5u"></script>
+    <script src="sites/all/themes/cs/js/aria-role2c3d.js?ql3p5u"></script>
+    <script>
+        jQuery.extend(Drupal.settings, {
+            "basePath": "\/",
+            "pathPrefix": "",
+            "ajaxPageState": {
+                "theme": "cs",
+                "theme_token": "t2IvLQY--4rJRFytvHF9w8o6t5RbjbwkGkY9k1vvHLo",
+                "jquery_version": "1.8",
+                "js": {
+                    "sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.js": 1,
+                    "misc\/jquery-extend-3.4.0.js": 1,
+                    "misc\/jquery.once.js": 1,
+                    "misc\/drupal.js": 1,
+                    "sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js": 1,
+                    "sites\/all\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.js": 1,
+                    "misc\/ajax.js": 1,
+                    "sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js": 1,
+                    "profiles\/oxide\/modules\/contrib\/spamspan\/spamspan.js": 1,
+                    "sites\/all\/modules\/contrib\/apachesolr_autocomplete\/apachesolr_autocomplete.js": 1,
+                    "sites\/all\/modules\/contrib\/apachesolr_autocomplete\/jquery-autocomplete\/jquery.autocomplete.js": 1,
+                    "misc\/progress.js": 1,
+                    "sites\/all\/libraries\/jquery.mousewheel\/jquery.mousewheel.js": 1,
+                    "sites\/all\/libraries\/history.js\/scripts\/bundled\/html4+html5\/jquery.history.js": 1,
+                    "sites\/all\/modules\/custom\/nma_cs\/js\/nma_cs_collections.js": 1,
+                    "sites\/all\/modules\/contrib\/facetapi\/facetapi.js": 1,
+                    "sites\/all\/modules\/custom\/nma_solr\/js\/facet-filter.js": 1,
+                    "sites\/all\/modules\/google_analytics\/googleanalytics.js": 1,
+                    "0": 1,
+                    "sites\/all\/libraries\/placeholder\/jquery.placeholder.js": 1,
+                    "sites\/all\/modules\/contrib\/placeholder\/placeholder.js": 1,
+                    "sites\/all\/libraries\/jquery.lazyload\/jquery.lazyload.min.js": 1,
+                    "sites\/all\/themes\/cs\/js\/script.js": 1,
+                    "sites\/all\/themes\/cs\/js\/aria-role.js": 1
+                },
+                "css": {
+                    "modules\/system\/system.base.css": 1,
+                    "modules\/system\/system.menus.css": 1,
+                    "modules\/system\/system.messages.css": 1,
+                    "modules\/system\/system.theme.css": 1,
+                    "modules\/comment\/comment.css": 1,
+                    "profiles\/oxide\/modules\/contrib\/date\/date_api\/date.css": 1,
+                    "profiles\/oxide\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css": 1,
+                    "modules\/field\/theme\/field.css": 1,
+                    "sites\/all\/modules\/contrib\/menu_attach_block\/menu_attach_block.css": 1,
+                    "modules\/node\/node.css": 1,
+                    "modules\/search\/search.css": 1,
+                    "modules\/user\/user.css": 1,
+                    "profiles\/oxide\/modules\/contrib\/views\/css\/views.css": 1,
+                    "sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css": 1,
+                    "sites\/all\/modules\/contrib\/apachesolr_autocomplete\/apachesolr_autocomplete.css": 1,
+                    "sites\/all\/modules\/contrib\/apachesolr_autocomplete\/jquery-autocomplete\/jquery.autocomplete.css": 1,
+                    "profiles\/oxide\/modules\/contrib\/ctools\/css\/ctools.css": 1,
+                    "sites\/all\/themes\/cs\/system.menus.css": 1,
+                    "sites\/all\/themes\/cs\/css\/normalize.css": 1,
+                    "sites\/all\/themes\/cs\/css\/scrollbar.css": 1,
+                    "sites\/all\/themes\/cs\/css\/carousel.css": 1,
+                    "sites\/all\/themes\/cs\/css\/wireframes.css": 1,
+                    "sites\/all\/themes\/cs\/css\/layouts\/responsive-sidebars.css": 1,
+                    "sites\/all\/themes\/cs\/css\/page-backgrounds.css": 1,
+                    "sites\/all\/themes\/cs\/css\/tabs.css": 1,
+                    "sites\/all\/themes\/cs\/css\/pages.css": 1,
+                    "sites\/all\/themes\/cs\/css\/blocks.css": 1,
+                    "sites\/all\/themes\/cs\/css\/navigation.css": 1,
+                    "sites\/all\/themes\/cs\/css\/views-styles.css": 1,
+                    "sites\/all\/themes\/cs\/css\/nodes.css": 1,
+                    "sites\/all\/themes\/cs\/css\/comments.css": 1,
+                    "sites\/all\/themes\/cs\/css\/forms.css": 1,
+                    "sites\/all\/themes\/cs\/css\/fields.css": 1,
+                    "sites\/all\/themes\/cs\/css\/components.css": 1,
+                    "sites\/all\/themes\/cs\/css\/responsive.css": 1,
+                    "sites\/all\/themes\/cs\/css\/wysiwyg-styles.css": 1,
+                    "sites\/all\/themes\/cs\/css\/print.css": 1
+                }
+            },
+            "admin_menu": {
+                "suppress": 1
+            },
+            "apachesolr_autocomplete": {
+                "path": "\/apachesolr_autocomplete",
+                "forms": {
+                    "search-block-form": {
+                        "id": "search-block-form",
+                        "path": "\/apachesolr_autocomplete_callback\/apachesolr_search_page%3Acore_search"
+                    }
+                }
+            },
+            "nma_cs": {
+                "basePath": "\/",
+                "modulePath": "sites\/all\/modules\/custom\/nma_cs",
+                "collectionRows": 8
+            },
+            "facetapi": {
+                "facets": [{
+                    "limit": "0",
+                    "id": "facetapi-facet-apachesolremu-object-block-obj-type",
+                    "searcher": "apachesolr@emu_object",
+                    "realmName": "block",
+                    "facetName": "obj_type",
+                    "queryType": null,
+                    "widget": "facetapi_links",
+                    "showMoreText": "Show more",
+                    "showFewerText": "Show fewer"
+                }, {
+                    "limit": "0",
+                    "id": "facetapi-facet-apachesolremu-object-block-obj-place-name",
+                    "searcher": "apachesolr@emu_object",
+                    "realmName": "block",
+                    "facetName": "obj_place_name",
+                    "queryType": null,
+                    "widget": "facetapi_links",
+                    "showMoreText": "Show more",
+                    "showFewerText": "Show fewer"
+                }, {
+                    "limit": "0",
+                    "id": "facetapi-facet-apachesolremu-object-block-obj-party-name",
+                    "searcher": "apachesolr@emu_object",
+                    "realmName": "block",
+                    "facetName": "obj_party_name",
+                    "queryType": null,
+                    "widget": "facetapi_links",
+                    "showMoreText": "Show more",
+                    "showFewerText": "Show fewer"
+                }, {
+                    "limit": "0",
+                    "id": "facetapi-facet-apachesolremu-object-block-obj-date-year",
+                    "searcher": "apachesolr@emu_object",
+                    "realmName": "block",
+                    "facetName": "obj_date_year",
+                    "queryType": null,
+                    "widget": "facetapi_links",
+                    "showMoreText": "Show more",
+                    "showFewerText": "Show fewer"
+                }]
+            },
+            "googleanalytics": {
+                "trackOutbound": 1,
+                "trackMailto": 1,
+                "trackDownload": 1,
+                "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"
+            },
+            "urlIsAjaxTrusted": {
+                "\/collections": true
+            }
+        });
+    </script>
+    
+</head>
+
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-collections section-collections">
+    
+    <p id="skip-link" tabindex="-1">
+        <a href="#page-skip-position" class="element-invisible element-focusable">Jump to content</a>
+    </p>
+
+    <div id="page" class="page-wrapper no-messages">
+
+        <div class="main-wrapper" id="main">
+
+            <div class="header" style="background-color: #2d3836;">
+                <div id="name-and-slogan" class="name-and-slogan">
+                    <div class="titles">
+                        <a class="collection-explorer" title="Collection Explorer" href="./collections.html">
+                            <h2 id="site-slogan" class="site-slogan" style="color: #1ad9ac;">Our Collections</h2>
+                        </a>
+
+                    </div>
+                </div>
+                <!-- /#name-and-slogan -->
+            </div>
+
+            <div id="content" class="main-content column active-menu">
+
+                <a id="main-content"></a>
+
+                <div class="sidebars">
+                    <div class="sidebar-wrapper">
+                        <section class="region region-sidebar-first column sidebar">
+                          
+                            <div id="block-block-3" class="block block-block contextual-links-region even">
+
+                                <h2 class="block__title block-title">Home link</h2>
+
+                                <p><a href="./collections.html">Home</a></p>
+
+                            </div>
+                            <div id="block-menu-menu-sub-menu" class="block block-menu contextual-links-region even" role="navigation">
+
+                                <h2 class="block__title block-title">Sub menu</h2>
+
+                                <ul class="menu">
+                                    <li class="menu__item is-leaf first leaf link-whatsnew"><a href="collections.html" title="" class="menu__link">What’s new</a></li>
+                                    <li class="menu__item is-leaf leaf link-collection"><a href="collections.html" title="" class="menu__link active">Collections</a></li>
+                                </ul>
+                            </div>
+                            <div id="block-menu-menu-top" class="block block-menu contextual-links-region last odd" role="navigation">
+
+
+                                <ul class="menu">
+                                    <li class="menu__item is-leaf is-active-trail first leaf active-trail"><a href="about.html" title="" class="menu__link is-active-trail active-trail">About</a></li>
+                                    <li class="menu__item is-leaf last leaf"><a href="help.html" title="" class="menu__link">Help</a></li>
+                                </ul>
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+                <!--Content filter -->
+                <div class="main-page">
+                    <div class="main-page-wrapper">
+                        <div class="mobile-header">
+                            <div id="name-and-slogan" class="name-and-slogan">
+                                <a title="Collection explorer" href="#" class="mobile-menu">Menu toggle</a>
+                                <div class="titles">
+                                    <div class="nma-wrapper">
+                                        <h1 id="site-name" class="sitename">
+                                            Our Colections </h1>
+
+                                    </div>
+                                    <div class="collection-explorer">
+                                        <h2 id="site-slogan" class="site-slogan">Oue Collections</h2>
+                                    </div>
+                                </div>
+                                <a href="#" class="mobile-filter"><span>4</span></a>
+                            </div>
+                            <!-- /#name-and-slogan -->
+                            <div class="triangle-mobile-wrapper"></div>
+                        </div>
+                        <div class="triangle-wrapper"></div>
+                        <div class="ajax-throbber-wrapper">
+                            <span class="ajax-throbber-img"></span>
+                        </div>
+                        <div class="explore-header">
+                        </div>
+                        <div class="page-content-wrapper">
+                            <div tabindex="0" id="page-skip-position" class="page-content">
+                                <div class="page-content-top">
+                                    <h1 class="title page-title" id="page-title">Collections</h1>
+                                    
+                                        <div class="container">
+                                            
+                                                <div class="row">
+                                                    <div class="ml-3 col-3 mr-auto">
+                                                        <button id="reloadBtn" onclick="reloadFunction()" class="btn btn-outline-primary mb-3">Reload</button>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <input id="searchTxt" type="text" class="form-control" placeholder="Search ...">
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <button id="searchBtn" onclick="searchFunction()" class="btn btn-outline-primary">Search</button>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="page-content-padding">
+                                    <div class="region region-content">
+
+                                        <div id="loader" class="spinner-border spin-size text-success w-25 h-25 mt-5" role="status"></div>
+                                        <div class="object-section">
+                                            <div class="object-filter-list-wrapper">
+                                                <div id="section-list">
+                                                    <div class="section-list-wrapper">
+                                                        <ul id="list_of_collections" class="object-view">
+                                                            
+                                                        </ul>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /#content -->
+
+        </div>
+        <!-- /#main -->
+
+
+    </div>
+    <!-- /#page -->
+<script>
+    let xhr = new XMLHttpRequest();  // fetching records from the api in javascript here
+xhr.open("GET" , "https://api.vic.gov.au:443/museumvictoria/v1.0/collections/articles");
+xhr.setRequestHeader('apikey','163ed491-51f4-4d8b-b531-547584af3cd4'); // using the api key
+
+let recordsData;
+
+// Getting records one by one and displaying in html
+
+xhr.onload = async function(){
+    if(xhr.readyState == 4 && xhr.status == 200 ){
+            let data= await JSON.parse(xhr.responseText);
+            console.log(data);
+            recordsData = data;
+            document.getElementById('loader').style.display='None';
+            data.forEach((element,i) => {
+                if(element.media.length === 0){
+                    // do nothing
+                }else{
+                    let li=document.createElement("li");
+                    li.setAttribute("class",'collection');
+                    li.setAttribute("style","margin-bottom: 40px;");
+                    let h3=document.createElement("h3");
+                    h3.setAttribute("class",'collection-title');
+                    h3.setAttribute("style","margin-bottom: 20px;");
+                    let anchor=document.createElement("a");
+                    let text_a = document.createTextNode(element.title); 
+                    anchor.setAttribute("href",`./collection-details.html?id=${i}`);
+                    anchor.setAttribute("style","color: #1ad9ac;");
+                    anchor.appendChild(text_a);
+                    h3.appendChild(anchor);
+                    let anchor2=document.createElement("a");
+                    anchor2.setAttribute("href",`./collection-details.html?id=${i}`);
+                    anchor2.setAttribute("class","objectlink")
+                    let image = document.createElement('img');
+                    image.setAttribute("style","width: 850px !important; height: 200px !important;")
+                    image.setAttribute("src",element.media[0].large.uri);
+                    anchor2.appendChild(image)
+                    li.appendChild(h3);
+                    li.appendChild(anchor2);
+                    document.getElementById('list_of_collections').appendChild(li);
+                }
+            });
+        }        
+    }
+
+xhr.send()
+
+
+const searchFunction= ()=>{
+    // e.preventDefault();
+    let searchTxt = document.getElementById('searchTxt').value;
+    document.getElementById('list_of_collections').innerHTML = "";
+    recordsData.forEach((element,i) => {
+                let searchString = element.title.toLowerCase();
+                searchTxt = searchTxt.toLowerCase(); 
+                let result = searchString.search(searchTxt);
+                
+                if(element.media.length === 0 || result < 0){
+                    // do nothing
+                }else{
+                    let li=document.createElement("li");
+                    li.setAttribute("class",'collection');
+                    li.setAttribute("style","margin-bottom: 40px;");
+                    let h3=document.createElement("h3");
+                    h3.setAttribute("class",'collection-title');
+                    h3.setAttribute("style","margin-bottom: 20px;");
+                    let anchor=document.createElement("a");
+                    let text_a = document.createTextNode(element.title); 
+                    anchor.setAttribute("href",`./collection-details.html?id=${i}`);
+                    anchor.setAttribute("style","color: #1ad9ac;");
+                    anchor.appendChild(text_a);
+                    h3.appendChild(anchor);
+                    let anchor2=document.createElement("a");
+                    anchor2.setAttribute("href",`./collection-details.html?id=${i}`);
+                    anchor2.setAttribute("class","objectlink")
+                    let image = document.createElement('img');
+                    image.setAttribute("style","width: 650px !important; height: 200px !important;")
+                    image.setAttribute("src",element.media[0].large.uri);
+                    anchor2.appendChild(image)
+                    li.appendChild(h3);
+                    li.appendChild(anchor2);
+                    document.getElementById('list_of_collections').appendChild(li);
+                }
+            });
+    
+}
+
+const reloadFunction= ()=>{
+    window.location.reload();
+}
+
+</script>
+</body>
+
+
+</html>
