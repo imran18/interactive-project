@@ -1,0 +1,108 @@
+<html>
+<title>Collection Explorer | Our Collections</title>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    *{
+        text-decoration: none !important;
+    }
+    .spin-size{
+width: 150px !important;
+height: 150px !important;
+position: absolute;
+bottom: 23%;
+left: 50%;
+}
+</style>
+<body>
+    
+    <input type="checkbox" id="menu">
+    <nav>
+        <label>Our Collections</label>
+        <label for="menu" class="menu-bar"> 
+        <i class="fa fa-bars"></i>
+      </label>
+    </nav>
+    <div class="side-menu">
+        <br>
+        <a href="collections.html"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="collections.html"><i class="fa fa-question-circle"></i><span>Whats New</span></a>
+        <a href="collections.html"><i class="fa fa-database"></i><span>Collections</span></a>
+        <a href="about.html"><i class="fa fa-info-circle"></i><span>About</span></a>
+        <a href="help.html"><i class="fa fa-book"></i><span>Help</span></a>
+    </div>
+    <div class="data">
+        <div class="extra"></div>
+        <div class="banner">
+            <div class="heading">
+                <h1>Collections</h1>
+            </div>
+            <div class="myrow">
+                <div>
+                    <button onclick="reloadFunction()" class="btn btn-outline-primary">Refresh</button>
+                </div>
+                <div>
+                    <input type="text" placeholder="Start Searching Here ..." id="search-input">
+                </div>
+                <div>
+                    <button onclick="searchFunction()" class="btn btn-outline-primary">Search</button>
+                </div>
+            </div>
+        </div>
+        <div id="list_of_collections" class="content">
+            <div id="loader" class="spinner-border spin-size text-success w-25 h-25 mt-5" role="status"></div>
+            <!-- <div class="object">
+                <a href="details.html">
+                    <h4><span><i class="fa fa-tag"></i></span>&nbsp;&nbsp;Image 1</h4>
+                </a>
+                <br>
+                <img src="img.jpg">
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="object">
+                <a href="details.html">
+                    <h4><span><i class="fa fa-tag"></i></span>&nbsp;&nbsp;Image 1</h4>
+                </a>
+                <br>
+                <img src="img.jpg">
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="object">
+                <a href="details.html">
+                    <h4><span><i class="fa fa-tag"></i></span>&nbsp;&nbsp;Image 1</h4>
+                </a>
+                <br>
+                <img src="img.jpg">
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="object">
+                <a href="details.html">
+                    <h4><span><i class="fa fa-tag"></i></span>&nbsp;&nbsp;Image 1</h4>
+                </a>
+                <br>
+                <img src="img.jpg">
+                <br>
+                <br>
+                <br>
+                <br>
+            </div> -->
+        </div>
+    </div>
+    <script src="./javascript-api-call/collections.js"></script>
+</body>
+
+</html>
