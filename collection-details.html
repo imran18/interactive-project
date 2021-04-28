@@ -1,0 +1,83 @@
+<html>
+<title>Collection Explorer | Our Collections</title>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    *{
+        text-decoration: none !important;
+    }
+    .spin-size{
+width: 150px !important;
+height: 150px !important;
+position: absolute;
+bottom: 23%;
+left: 50%;
+}
+</style>
+<body>
+    <div id="loader" class="spinner-border spin-size text-success w-25 h-25 mt-5" role="status"></div>
+    <input type="checkbox" id="menu">
+    <nav>
+        <label>Our Collections</label>
+        <label for="menu" class="menu-bar"> 
+        <i class="fa fa-bars"></i>
+      </label>
+    </nav>
+    <div class="side-menu">
+        <br>
+        <a href="collections.html"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="collections.html"><i class="fa fa-question-circle"></i><span>Whats New</span></a>
+        <a href="collections.html"><i class="fa fa-database"></i><span>Collections</span></a>
+        <a href="about.html"><i class="fa fa-info-circle"></i><span>About</span></a>
+        <a href="help.html"><i class="fa fa-book"></i><span>Help</span></a>
+    </div>
+    <div class="data">
+        <div class="extra"></div>
+        <div class="banner">
+            <div class="heading">
+                <h1 style="margin-top: 30px;">Collection Details</h1>
+            </div>
+        </div>
+        <div id="collections" class="content d-none">
+            <div class="object">
+                <div class="title">
+                    <div>
+                        <!-- <a href=""> -->
+                            <h4 id="title"><span ><i class="fa fa-tag"></i></span>&nbsp;&nbsp;</h4>
+                        <!-- </a> -->
+                    </div>
+                    <div>
+                        <h5 id="date"><span><i class="fa fa-calendar"></i>&nbsp;Date:&nbsp;</span></h5>
+                    </div>
+                </div>
+                <br style="clear: left;">
+                <img id="image" src="" style="height: auto;">
+                <br>
+                <br>
+                <br>
+                <p id="content-para" style="text-align: justify; width: 80%;" data-controller="#readMore">
+                   
+                </p>
+                <br>
+                <!-- <button class="btn btn-outline-primary mb-3" >Read more</button> -->
+                <button class="btn btn-outline-primary" style="margin-left: 0px;" id="readMore">Read More</button>
+                <br><br>
+                <h5 id="author"><span><i class="fa fa-user"></i>&nbsp;Author:&nbsp;</span></h5>
+                <br><br>
+                <h5 id="keywords"><span><i class="fa fa-tag"></i>&nbsp;Keywords:&nbsp;</span></h5>
+                <br><br>
+                <h5 id="year"><span><i class="fa fa-calendar"></i>&nbsp;Year Written:&nbsp;</span></h5>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-read-more.min.js"></script>
+    <script src="./javascript-api-call/collection-details.js"></script>
+</body>
+
+</html>
