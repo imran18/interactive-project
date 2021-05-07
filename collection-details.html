@@ -1,0 +1,54 @@
+<html>
+<title>Collection Explorer | Our Collections</title>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="loadDetails()">
+    <div id="loader" class="spinner-border spin-size text-success w-25 h-25 mt-5" role="status"></div>
+    <input type="checkbox" id="menu">
+    <nav>
+        <label>Collections</label>
+        <label for="menu" class="menu-bar"> 
+        <i class="fa fa-bars"></i>
+      </label>
+    </nav>
+    <div class="side-menu">
+        <a href="collections.html"><i class="fa fa-database"></i><span>Collections</span></a>
+        <a href="about.html"><i class="fa fa-info-circle"></i><span>About</span></a>
+        <a href="help.html"><i class="fa fa-book"></i><span>Help</span></a>
+    </div>
+    <div class="data">
+        <div class="extra"></div>
+        <div class="banner">
+            <div class="heading">
+                <h1 id="heading1">Collection Details</h1>
+            </div>
+        </div>
+        <div id="collections" class="content d-none">
+            <div class="object">
+                <h4 class="mb-3" id="title"></h4>
+                <h4 class="mb-3 font-weight-normal font-size-sm" id="date"><span><i class="fa fa-calendar"></i>&nbsp;&nbsp;</span></h4>
+                <img class="image-size" id="image" src="">
+                <p id="content-para" data-controller="#readMore">
+                </p>
+                <button class="btn" id="readMore">Read More</button>
+                <div class="col">
+                    <h5 class="overflow-margin-right" id="author"><span><i class="fa fa-user"></i>&nbsp;Author:&nbsp;</span></h5>
+                    <h5 class="overflow-margin-right" id="keywords"><span><i class="fa fa-tag"></i>&nbsp;Keywords:&nbsp;</span></h5>
+                    <h5 class="mb-5 " id="year"><span><i class="fa fa-calendar"></i>&nbsp;Year Written:&nbsp;</span></h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-read-more.min.js"></script>
+    <script src="./javascript-api-call/collections.js"></script>
+</body>
+
+</html>
