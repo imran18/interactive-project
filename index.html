@@ -1,0 +1,55 @@
+<html>
+<title>Collection Explorer | Our Collections</title>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="loadData()">
+
+    <input type="checkbox" id="menu">
+    <nav>
+        <label>Collections</label>
+        <label for="menu" class="menu-bar"> 
+        <i class="fa fa-bars"></i>
+      </label>
+    </nav>
+    <div class="side-menu">
+        <a href="collections.html"><i class="fa fa-database"></i><span>Collections</span></a>
+        <a href="about.html"><i class="fa fa-info-circle"></i><span>About</span></a>
+        <a href="help.html"><i class="fa fa-book"></i><span>Help</span></a>
+    </div>
+    <div class="data">
+        <div class="extra"></div>
+        <div class="banner">
+            <div class="heading">
+                <h1>Collections</h1>
+            </div>
+            <div class="myrow ml-5 mt-4">
+                <div>
+                    <button id="bt" onclick="reloadFunction()" class="btn">Refresh</button>
+                </div>
+                <div>
+                    <input type="text" placeholder="Start Searching Here ..." id="search-input">
+                </div>
+                <div>
+                    <button id="bt" onclick="searchFunction()" class="btn">Search</button>
+                </div>
+            </div>
+        </div>
+        <div id="list_of_collections" class="content">
+            <div id="loader" class="spinner-border spin-size text-success w-25 h-25 mt-5" role="status"></div>
+                <div id="list" class="row object">
+         
+                <!-- Cards will be loaded here -->
+
+                </div>
+        </div>
+    </div>
+    <script src="./javascript-api-call/collections.js"></script>
+</body>
+
+</html>
